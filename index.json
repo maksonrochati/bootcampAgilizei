@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 3,
     "failures": 0,
-    "start": "2022-05-17T15:38:44.364Z",
-    "end": "2022-05-17T15:39:07.455Z",
-    "duration": 8058,
+    "start": "2022-05-17T15:43:31.421Z",
+    "end": "2022-05-17T15:43:51.086Z",
+    "duration": 6752,
     "testsRegistered": 5,
     "passPercent": 40,
     "pendingPercent": 60,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3f80a44c-541e-4b99-8cb6-af23089c34f2",
+      "uuid": "65ff7abb-b26f-4d23-997d-288d68025d52",
       "title": "",
       "fullFile": "cypress/integration/cadstro.spec.js",
       "file": "cypress/integration/cadstro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "cf7e1107-e100-44d9-a381-e6d09aa3eeb6",
+          "uuid": "93f7e59b-7a8b-4768-80d9-0d0c8e2193fd",
           "title": "Cadastro",
           "fullFile": "",
           "file": "",
@@ -47,8 +47,8 @@
               "context": null,
               "code": "",
               "err": {},
-              "uuid": "61f7e1c5-3bbf-4585-84f6-895d0c600ef2",
-              "parentUUID": "cf7e1107-e100-44d9-a381-e6d09aa3eeb6",
+              "uuid": "65baafe9-b99a-4344-b09f-d2e81f5503f8",
+              "parentUUID": "93f7e59b-7a8b-4768-80d9-0d0c8e2193fd",
               "isHook": false,
               "skipped": false
             },
@@ -65,8 +65,8 @@
               "context": null,
               "code": "",
               "err": {},
-              "uuid": "8809b98f-2c54-402f-adaf-3af865555447",
-              "parentUUID": "cf7e1107-e100-44d9-a381-e6d09aa3eeb6",
+              "uuid": "43f95186-b8a0-4edc-9a4e-80069f892143",
+              "parentUUID": "93f7e59b-7a8b-4768-80d9-0d0c8e2193fd",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Quando eu informar os dados e finalizar, então o cadastro deve ser efetuado \"Usando Faker-Br\"",
               "fullTitle": "Cadastro Quando eu informar os dados e finalizar, então o cadastro deve ser efetuado \"Usando Faker-Br\"",
               "timedOut": null,
-              "duration": 7325,
+              "duration": 5885,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -83,23 +83,23 @@
               "context": null,
               "code": "cy.visit('https://form-agilizei.netlify.app');\ncy.get('input[name=firstName]').type(faker.name.firstName());\ncy.get('input[name=lastName]').type(faker.name.lastName());\ncy.get('textarea[name=adress]').type(faker.address.streetAddress());\ncy.get('input[name=emailAdress]').type(faker.internet.email());\ncy.get('input[value=n]').check();\ncy.get('input[type=checkbox]').check('Netflix');\ncy.get('input[type=checkbox]').check('Dormir');\ncy.get('select#countries').select('Dinamarca', {\n  force: true\n});\ncy.get('select#years').select('2006', {\n  force: true\n});\ncy.get('select#months').select('Junho', {\n  force: true\n});\ncy.get('select#days').select('23', {\n  force: true\n});\ncy.get('input#firstpassword').type('M@ikti69');\ncy.get('input#secondpassword').type('M@ikti69');\ncy.get('button#submitbtn').click();\ncy.url().should('contain', 'listagem');",
               "err": {},
-              "uuid": "219f87b7-6428-4e5f-8740-e6f08890f1c1",
-              "parentUUID": "cf7e1107-e100-44d9-a381-e6d09aa3eeb6",
+              "uuid": "b776bf88-5883-44db-b327-a181e1c2b6b4",
+              "parentUUID": "93f7e59b-7a8b-4768-80d9-0d0c8e2193fd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "219f87b7-6428-4e5f-8740-e6f08890f1c1"
+            "b776bf88-5883-44db-b327-a181e1c2b6b4"
           ],
           "failures": [],
           "pending": [
-            "61f7e1c5-3bbf-4585-84f6-895d0c600ef2",
-            "8809b98f-2c54-402f-adaf-3af865555447"
+            "65baafe9-b99a-4344-b09f-d2e81f5503f8",
+            "43f95186-b8a0-4edc-9a4e-80069f892143"
           ],
           "skipped": [],
-          "duration": 7325,
+          "duration": 5885,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -115,7 +115,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "d03075cb-1aba-40e3-95e7-836b16b9d05d",
+      "uuid": "8459dca4-79bf-4641-9850-84627c6494ab",
       "title": "",
       "fullFile": "cypress/integration/listagem.spec.js",
       "file": "cypress/integration/listagem.spec.js",
@@ -124,7 +124,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "27ae53e9-bc64-49a4-a4bc-b5fabf95b855",
+          "uuid": "7107731b-9b68-46f1-902e-0a079a979b83",
           "title": "Listagem",
           "fullFile": "",
           "file": "",
@@ -135,7 +135,7 @@
               "title": "Quando não houver cadastros, então a listagem deve está vazia",
               "fullTitle": "Listagem Quando não houver cadastros, então a listagem deve está vazia",
               "timedOut": null,
-              "duration": 733,
+              "duration": 867,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -144,8 +144,8 @@
               "context": null,
               "code": "cy.fixture('listagem-vazia').then(data => {\n  window.localStorage.setItem('data', JSON.stringify(data));\n});\ncy.visit('https://form-agilizei.netlify.app/listagem.html');\ncy.get('table tbody tr').should('have.length', 0);",
               "err": {},
-              "uuid": "db9be78a-ac6a-4890-8698-db64c115a9f6",
-              "parentUUID": "27ae53e9-bc64-49a4-a4bc-b5fabf95b855",
+              "uuid": "41c64754-0fb0-4a77-a16c-dcd2ce04c9c8",
+              "parentUUID": "7107731b-9b68-46f1-902e-0a079a979b83",
               "isHook": false,
               "skipped": false
             },
@@ -162,22 +162,22 @@
               "context": null,
               "code": "",
               "err": {},
-              "uuid": "6e28710f-b736-4f09-bb61-0cbfc6fe1f03",
-              "parentUUID": "27ae53e9-bc64-49a4-a4bc-b5fabf95b855",
+              "uuid": "51a51575-a259-49f5-b25a-83bc9007b639",
+              "parentUUID": "7107731b-9b68-46f1-902e-0a079a979b83",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "db9be78a-ac6a-4890-8698-db64c115a9f6"
+            "41c64754-0fb0-4a77-a16c-dcd2ce04c9c8"
           ],
           "failures": [],
           "pending": [
-            "6e28710f-b736-4f09-bb61-0cbfc6fe1f03"
+            "51a51575-a259-49f5-b25a-83bc9007b639"
           ],
           "skipped": [],
-          "duration": 733,
+          "duration": 867,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
