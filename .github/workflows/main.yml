@@ -18,7 +18,7 @@ jobs:
         node-version: 14.x
         
     - run: npm install
-    - run: npm pretest
+    - run: npm run pretest
     - run: npm run cy:run
       continue-on-error: true
       

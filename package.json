@@ -11,7 +11,6 @@
     "report:merge": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
     "report:mocha": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports",
     "postest": "npm run combine-reports && npm run generate-report"
-    
   },
   "keywords": [],
   "author": "",
